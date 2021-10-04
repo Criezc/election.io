@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-bg {
+    @apply bg-hero-pattern h-screen bg-center bg-cover bg-no-repeat m-0 bg-fixed bg-dark;
+  }
+  .footer-icon {
+    @apply md:w-8 lg:w-10 xl:w-12 md:h-8 w-9 h-9 md:mx-2 hover:-translate-y-2 transform transition duration-200;
+  }
+
+  @media (min-width: 1980px) {
+    .px-responsive {
+      @apply px-72;
+    }
+  }
+  @media (min-width: 1900px) {
+    .px-resp {
+      @apply px-16;
+    }
+  }
+
+  .footer-logo {
+    @apply xl:w-32 md:w-24 w-12;
+  }
+}
+
+.mainTitle {
+  text-shadow: 0px 0px 4px #0c0217, 5px 4px 2px #00fff0;
+}
+
+.organization {
+  text-shadow: -5px -17px 0px rgba(68, 68, 68, 1);
+}
