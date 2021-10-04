@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         dark: "#0C0217",
         lightBlue: "#00FFF0",
+        custom: "#0c0217a4",
       },
       backgroundImage: {
         "hero-pattern": "url('/img/BACKGROUND.PNG')",

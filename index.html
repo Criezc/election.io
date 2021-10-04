@@ -5,113 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HIMTI Election</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" type="text/css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="main-bg">
-    <header
-      class="
-        hidden
-        container
-        mx-auto
-        md:block md:flex
-        flex-row
-        justify-between
-        bg-transparent
-        text-white
-        py-2
-        right-0
-        left-0
-        w-full
-        items-center
-        px-5
-      "
-    >
-      <div class="flex">
-        <img src="./img/HIMTI-PUTIH-min 1.png" alt="himti-logo" class="w-16" />
-      </div>
-      <div class="container mx-auto flex flex-row justify-start w-full">
-        <div
-          class="flex flex-row justify-center text-center font-semibold px-5"
-        >
-          <a href="">Home</a>
-        </div>
-        <div
-          class="flex flex-row justify-center text-center font-semibold px-5"
-        >
-          <a href="">
-            <span
-              class="
-                text-lightBlue
-                border-b-2 border-lightBlue
-                pb-1
-                inline-block
-              "
-            >
-              Our Candidate
-            </span>
-          </a>
-        </div>
-        <div
-          class="flex flex-row justify-center text-center font-semibold px-5"
-        >
-          <a href="">
-            <div
-              class="
-                flex flex-row
-                justify-center
-                text-center
-                font-semibold
-                px-5
-              "
-            >
-              <a href="">Vote</a>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="flex flex-row justify-center text-center font-semibold px-5">
-        <button>Login</button>
-      </div>
-    </header>
     <!-- Main Section -->
     <section id="mainSection">
       <!-- title -->
-      <div
-        class="
-          container
-          mx-auto
-          flex flex-col
-          justify-center
-          text-center
-          items-center
-          text-white
-          mt-10
-        "
-      >
-        <h2 class="text-center text-lightBlue text-2xl font-monts">
-          7 - 21 October 2021
-        </h2>
+      <div class="container mt-5">
+        <h2 class="title font-monts">7 - 21 October 2021</h2>
         <h1
           class="
-            text-center text-3xl
-            font-black
-            italic
-            text-white
+            text-center
+            fst-italic
+            fw-bolder
             font-monts
             mt-5
             mainTitle
+            subTitle
           "
         >
           HIMTI ELECTION 2021
         </h1>
-        <h3 class="text-center mt-5 font-black text-white font-monts">
+        <h3 class="text-center mt-5 fw-bolder font-monts text-white">
           ONE FAMILY ONE GOAL!
         </h3>
       </div>
@@ -119,17 +47,17 @@
       <!-- SubTitle -->
       <div
         class="
-          flex flex-col
+          d-flex
+          flex-col
           container
           mx-auto
-          mt-10
-          justify-center
+          justify-content-center
           text-center
-          align-middle
-          items-center
+          align-content-center
+          text-lightBlue
         "
       >
-        <h2 class="text-3xl text-lightBlue font-black font-monts">
+        <h2 class="text-3xl text-ligthBlue fw-bolder font-monts">
           OUR<br />CANDIDATE
         </h2>
       </div>
@@ -137,13 +65,30 @@
 
       <!-- Candidate -->
       <div
-        class="container mx-auto flex flex-row justify-center mt-10 mb-5 px-5"
+        class="
+          container
+          mx-auto
+          d-flex
+          flex-row
+          justify-content-center
+          mt-5
+          mb-5
+          px-5
+        "
       >
-        <div class="flex flex-row justify-center text-center cursor-pointer">
+        <div
+          class="
+            d-flex
+            flex-row
+            justify-content-center
+            text-center
+            cursor-pointer
+          "
+        >
           <img
             src="./img/LIST-CANDIDATE.png"
             alt="candidate"
-            class="cursor-pointer w-full md:w-4/5"
+            class="cursor-pointer w-full"
           />
         </div>
       </div>
@@ -156,42 +101,38 @@
       class="
         container
         mx-auto
-        flex flex-col
+        d-flex
+        flex-column
         text-center
-        justify-center
-        align-middle
-        items-center
-        mt-20
+        justify-content-center
+        align-items-center
+        mt-5
       "
     >
-      <h1 class="text-3xl font-monts font-black text-white">CANDIDATE #01</h1>
-      <hr class="w-56 text-white mt-2 border-lightBlue border-1" />
+      <h1 class="text-3xl font-monts fw-bold text-white">CANDIDATE #01</h1>
+      <hr class="w-56 text-white mt-2 underline" />
     </div>
-    <section id="candidateSectio" class="bg-dark">
+    <section id="candidateSectio" class="bg-darker">
       <div
         class="
           py-5
           container
           mx-auto
-          flex flex-col
-          justify-center
-          items-center
-          align-middle
-          bg-dark
-          mt-20
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+          bg-darker
+          mt-5
           space-y-10
           md:px-28
           px-5
         "
       >
         <!-- Candidate Title -->
-        <div class="container mx-auto flex flex-col px-responsive px-resp">
-          <h1
-            class="container mx-auto text-2xl font-monts font-black text-white"
-          >
-            WORK PROGRAM
-          </h1>
-          <div class="flex flex-row text-white space-x-5">
+        <div class="container mx-auto d-flex flex-column px-responsive px-resp">
+          <h1 class="text-2xl font-monts fw-bolder text-white">WORK PROGRAM</h1>
+          <div class="d-flex flex-column flex-md-row text-white md:space-x-5">
             <h2 class="text-lg">1.HIMTI Cakep</h2>
             <h2 class="text-lg">2.HIMTI Appreciation Day</h2>
           </div>
@@ -202,10 +143,10 @@
           class="
             container
             mx-auto
-            flex flex-col
-            justify-center
-            align-middle
-            items-center
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center align-middle
           "
         >
           <div id="kevinCharles">
@@ -221,24 +162,36 @@
 
           <div
             class="
-              mt-10
+              mt-5
               container
               mx-auto
-              flex flex-col
-              justify-center
-              items-center
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
               text-white
-              font-black font-monts
+              fw-bolder
+              font-monts
+              text-center
             "
           >
-            <h1 class="text-3xl uppercase">kevin charles</h1>
+            <h1 class="text-3xl text-uppercase">kevin charles</h1>
             <h2 class="text-gray-600 text-2xl">
               Stretch Your Bravery and Solidarity Wings
             </h2>
           </div>
 
-          <div class="container mx-auto flex justify-center items-center mt-10">
-            <div class="text-xl text-white font-monts font-normal text-center">
+          <div
+            class="
+              container
+              mx-auto
+              flex
+              justify-content-center
+              align-items-center
+              mt-5
+            "
+          >
+            <div class="text-xl text-white font-monts text-center fw-normal">
               <p>
                 To complete ther merging process this year of 5 regions, so that
                 the tagline of HIMTI which is “One Family One Goal” will once
@@ -254,25 +207,27 @@
             class="
               container
               mx-auto
-              flex flex-col
-              justify-center
-              items-center
-              mt-10
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
+              mt-5
             "
           >
-            <div class="font-monts font-bold text-center">
+            <div class="font-monts fw-bolder text-center">
               <h1 class="text-lightBlue organization text-4xl italic">
                 Organization Experience
               </h1>
             </div>
             <div
               class="
-                flex flex-col
-                justify-center
-                items-center
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
                 text-white
                 space-y-2
-                mt-10
+                mt-5
                 text-center
               "
             >
@@ -293,42 +248,38 @@
       class="
         container
         mx-auto
-        flex flex-col
+        d-flex
+        flex-column
         text-center
-        justify-center
-        align-middle
-        items-center
-        mt-20
+        justify-content-center
+        align-content-center align-items-center
+        mt-5
       "
     >
-      <h1 class="text-3xl font-monts font-black text-white">CANDIDATE #02</h1>
-      <hr class="w-56 text-white mt-2 border-lightBlue border-1" />
+      <h1 class="text-3xl font-monts fw-bold text-white">CANDIDATE #02</h1>
+      <hr class="w-56 text-white mt-2 underline" />
     </div>
-    <section id="candidateSectio" class="bg-dark">
+    <section id="candidateSectio" class="bg-darker">
       <div
         class="
           py-5
           container
           mx-auto
-          flex flex-col
-          justify-center
-          items-center
-          align-middle
-          bg-dark
-          mt-20
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+          bg-darker
+          mt-5
+          space-y-10
           md:px-28
           px-5
-          space-y-10
         "
       >
         <!-- Candidate Title -->
-        <div class="container mx-auto flex flex-col px-responsive px-resp">
-          <h1
-            class="container mx-auto text-2xl font-monts font-black text-white"
-          >
-            WORK PROGRAM
-          </h1>
-          <div class="flex flex-row text-white space-x-5">
+        <div class="container mx-auto d-flex flex-column px-responsive px-resp">
+          <h1 class="text-2xl font-monts fw-bolder text-white">WORK PROGRAM</h1>
+          <div class="d-flex flex-column flex-md-row text-white md:space-x-5">
             <h2 class="text-lg">1.HIMTI Pioneers</h2>
             <h2 class="text-lg">2.Binary Camp</h2>
           </div>
@@ -339,41 +290,53 @@
           class="
             container
             mx-auto
-            flex flex-col
-            justify-center
-            align-middle
-            items-center
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center align-middle
           "
         >
-          <div>
+          <div id="jasonJeremy">
             <a
               href="https://drive.google.com/file/d/1UL2-cZs3gxzh3qTBjTdHmSLqDDGhCh7m/view"
+              class="transform duration-200 hover:opacity-75"
               rel="noreferrer noopener"
               target="_blank"
-              class="transform duration-200 hover:opacity-75"
             >
-              <img src="./img/jason-jeremy.png" alt="jason-jeremy" />
+              <img src="./img/jason-jeremy.png" alt="jeremy-jason" />
             </a>
           </div>
 
           <div
             class="
-              mt-10
+              mt-5
               container
               mx-auto
-              flex flex-col
-              justify-center
-              items-center
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
               text-white
-              font-black font-monts
+              fw-bolder
+              font-monts
+              text-center
             "
           >
-            <h1 class="text-3xl uppercase">jason jeremy wang</h1>
+            <h1 class="text-3xl text-uppercase">jason jeremy wijadi</h1>
             <h2 class="text-gray-600 text-2xl">HIMTI Together Strong</h2>
           </div>
 
-          <div class="container mx-auto flex justify-center items-center mt-10">
-            <div class="text-xl text-white font-monts font-normal text-center">
+          <div
+            class="
+              container
+              mx-auto
+              flex
+              justify-content-center
+              align-items-center
+              mt-5
+            "
+          >
+            <div class="text-xl text-white font-monts text-center fw-normal">
               <p>
                 To make HIMTI members become a positive influence wherever they
                 go in the future by putting forward development and growth, and
@@ -387,25 +350,27 @@
             class="
               container
               mx-auto
-              flex flex-col
-              justify-center
-              items-center
-              mt-10
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
+              mt-5
             "
           >
-            <div class="font-monts font-bold text-center">
+            <div class="font-monts fw-bolder text-center">
               <h1 class="text-lightBlue organization text-4xl italic">
                 Organization Experience
               </h1>
             </div>
             <div
               class="
-                flex flex-col
-                justify-center
-                items-center
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
                 text-white
                 space-y-2
-                mt-10
+                mt-5
                 text-center
               "
             >
@@ -427,42 +392,38 @@
       class="
         container
         mx-auto
-        flex flex-col
+        d-flex
+        flex-column
         text-center
-        justify-center
-        align-middle
-        items-center
-        mt-20
+        justify-content-center
+        align-content-center align-items-center
+        mt-5
       "
     >
-      <h1 class="text-3xl font-monts font-black text-white">CANDIDATE #03</h1>
-      <hr class="w-56 text-white mt-2 border-lightBlue border-1" />
+      <h1 class="text-3xl font-monts fw-bold text-white">CANDIDATE #03</h1>
+      <hr class="w-56 text-white mt-2 underline" />
     </div>
-    <section id="candidateSectio" class="bg-dark">
+    <section id="candidateSectio" class="bg-darker">
       <div
         class="
           py-5
           container
           mx-auto
-          flex flex-col
-          justify-center
-          items-center
-          align-middle
-          bg-dark
-          mt-20
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+          bg-darker
+          mt-5
+          space-y-10
           md:px-28
           px-5
-          space-y-10
         "
       >
         <!-- Candidate Title -->
-        <div class="container mx-auto flex flex-col px-responsive px-resp">
-          <h1
-            class="container mx-auto text-2xl font-monts font-black text-white"
-          >
-            WORK PROGRAM
-          </h1>
-          <div class="flex flex-row text-white space-x-5">
+        <div class="container mx-auto d-flex flex-column px-responsive px-resp">
+          <h1 class="text-2xl font-monts fw-bolder text-white">WORK PROGRAM</h1>
+          <div class="d-flex flex-column flex-md-row text-white md:space-x-5">
             <h2 class="text-lg">1.Celebrating Technology with HIMTI</h2>
             <h2 class="text-lg">2.HIT</h2>
           </div>
@@ -473,18 +434,18 @@
           class="
             container
             mx-auto
-            flex flex-col
-            justify-center
-            align-middle
-            items-center
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center align-middle
           "
         >
-          <div>
+          <div id="audinaMaharani">
             <a
               href="https://drive.google.com/file/d/1jsLsTrlRLpgBEQZ1bd7pSAraqfQjDyeb/view"
-              target="_blank"
-              rel="noreferrer noopener"
               class="transform duration-200 hover:opacity-75"
+              rel="noreferrer noopener"
+              target="_blank"
             >
               <img src="./img/audina-maharani.png" alt="audina-maharani" />
             </a>
@@ -492,24 +453,36 @@
 
           <div
             class="
-              mt-10
+              mt-5
               container
               mx-auto
-              flex flex-col
-              justify-center
-              items-center
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
               text-white
-              font-black font-monts
+              fw-bolder
+              font-monts
+              text-center
             "
           >
-            <h1 class="text-3xl uppercase">audina maharani</h1>
+            <h1 class="text-3xl text-uppercase">Audina Maharani</h1>
             <h2 class="text-gray-600 text-2xl">
               Let Our Unification and Affinity Leads Us to Greater Heights
             </h2>
           </div>
 
-          <div class="container mx-auto flex justify-center items-center mt-10">
-            <div class="text-xl text-white font-monts font-normal text-center">
+          <div
+            class="
+              container
+              mx-auto
+              flex
+              justify-content-center
+              align-items-center
+              mt-5
+            "
+          >
+            <div class="text-xl text-white font-monts text-center fw-normal">
               <p>
                 Equalize the work culture and solidarity throughout all of the
                 regions as well as contribute to the School of Computer Science
@@ -522,30 +495,32 @@
             class="
               container
               mx-auto
-              flex flex-col
-              justify-center
-              items-center
-              mt-10
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
+              mt-5
             "
           >
-            <div class="font-monts font-bold text-center">
+            <div class="font-monts fw-bolder text-center">
               <h1 class="text-lightBlue organization text-4xl italic">
                 Organization Experience
               </h1>
             </div>
             <div
               class="
-                flex flex-col
-                justify-center
-                items-center
+                d-flex
+                flex-column
+                justify-content-center
+                align-items-center
                 text-white
                 space-y-2
-                mt-10
+                mt-5
                 text-center
               "
             >
               <h2>Member of Relation Expansion Commission</h2>
-              <h2>Member of Publication and Marketing Division HIMTI 2021</h2>
+              <h2>Member of Publication and Marketing Division HIMTI 2021n</h2>
               <h2>Member of HISHOT 2021’s Domestic Virtual Study Tour</h2>
               <h2>Editor of HIMTI’s Podcast 2021</h2>
             </div>
@@ -555,73 +530,11 @@
       </div>
     </section>
     <!-- Candidate Section -->
-    <!-- Footer -->
-    <hr
-      class="w-full md:w-10/12 mx-auto border-white border-2 mb-6 md:mb-0 mt-20"
-    />
 
-    <footer
-      class="
-        flex flex-row
-        justify-between
-        items-center
-        md:w-10/12
-        w-full
-        mx-auto
-        container
-      "
-    >
-      <div class="container mx-auto mb-4 flex flex-row">
-        <img
-          src="./img/footer-logo.png"
-          alt="footer-logo"
-          class="footer-logo"
-        />
-        <img
-          src="./img/Logo-Binus-University-Universitas-Bina-Nusantara-Original-PNG 1.png"
-          alt="Logo-Binus-University-Universitas-Bina-Nusantara-Original-PNG"
-          class="footer-logo"
-        />
-      </div>
-      <div class="container mx-auto flex flex-col self-center inset-y-0 p-5">
-        <div class="flex flex-row justify-end">
-          <span class="flex flex-col md:flex-row">
-            <a href="">
-              <img src="./img/mail.png" alt="footer-mail" class="footer-icon" />
-            </a>
-            <a href="">
-              <img
-                src="./img/twitter.png"
-                alt="footer-twitter"
-                class="footer-icon"
-              />
-            </a>
-          </span>
-          <span class="flex flex-col md:flex-row">
-            <a href="">
-              <img
-                src="./img/instagram.png"
-                alt="footer-instagram"
-                class="footer-icon"
-              />
-            </a>
-            <a
-              href="
-          "
-            >
-              <img
-                src="./img/youtube.png"
-                alt="footer-youtube"
-                class="footer-icon"
-              />
-            </a>
-          </span>
-        </div>
-        <p class="text-white text-base text-right font-monts">
-          © Copyright HIMTI BINUS University. All righst reserved
-        </p>
-      </div>
-    </footer>
-    <!-- Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
